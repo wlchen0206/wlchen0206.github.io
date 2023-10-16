@@ -1,5 +1,5 @@
 ---
-title: "This is a testing article."
+title: "This is a testing article!"
 date: 2023-10-17 00:00:00 +0800
 
 tags:
