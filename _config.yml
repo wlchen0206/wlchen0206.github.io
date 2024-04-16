@@ -106,20 +106,20 @@ analytics:
 author:
   # name             : "Wei-Lin \"William\" Chen"
   avatar             : "/assets/image/profile.jpg"
-  # bio              : "I am an **amazing** person."
+  bio              : "Incoming CS Ph.D. student at University of Virginia"
   # location         : "Somewhere"
   # email            :
   links:
-    - label: "Google Scholar"
+    - label: ""
       icon: "fa-brands fa-google-scholar"
       url: "https://scholar.google.com/citations?user=Hrbne1wAAAAJ&hl=en"
-    - label: "Linkedin"
+    - label: ""
       icon: "fa-brands fa-linkedin fa-lg"
       url: "https://www.linkedin.com/in/weilinwchen/"
-    - label: "X"
+    - label: ""
       icon: "fa-brands fa-x-twitter"
       url: "https://twitter.com/wlchen0206"
-    - label: "Email"
+    - label: ""
       icon: "fa-regular fa-envelope"
       url: "mailto:wlchen@nlg.csie.ntu.edu.tw"
 

@@ -587,3 +587,14 @@ body {
 .vertical-space-bottom {
   margin-bottom: 75px; /* You can adjust the value as needed */
 }
+
+/* Box styles */
+.scrollable-box {
+  border: none;
+  padding: 5px;
+  font-size: 0.8em;
+  height: 160px;
+  overflow: scroll;
+  overflow-x: hidden;
+  // font-weight: normal;
+}
