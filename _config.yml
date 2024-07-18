@@ -104,9 +104,9 @@ analytics:
 
 # Site Author
 author:
-  # name               : "Incoming CS Ph.D. student at University of Virginia"
+  # name               : "Wei-Lin (William) Chen"
   avatar             : "/assets/image/profile.jpg"
-  bio              : "Incoming CS Ph.D. student at University of Virginia"
+  bio                : "Incoming CS Ph.D. student at University of Virginia"
   # location         : "Somewhere"
   # email            :
   links:
@@ -118,7 +118,7 @@ author:
       url: "https://www.linkedin.com/in/weilinwchen/"
     - label: ""
       icon: "fa-brands fa-x-twitter"
-      url: "https://twitter.com/wlchen0206"
+      url: "https://twitter.com/WeiLin__Chen"
     - label: ""
       icon: "fa-regular fa-envelope"
       url: "mailto:wlchen@nlg.csie.ntu.edu.tw"
