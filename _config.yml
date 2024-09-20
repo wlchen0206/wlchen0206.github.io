@@ -104,9 +104,9 @@ analytics:
 
 # Site Author
 author:
-  # name               : "Wei-Lin (William) Chen"
+  name               : "Wei-Lin Chen (陳韋霖)"
   avatar             : "/assets/image/profile.jpg"
-  bio                : "Incoming CS Ph.D. student at University of Virginia"
+  bio                : "First-year CS Ph.D. student at University of Virginia"
   # location         : "Somewhere"
   # email            :
   links:
