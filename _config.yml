@@ -106,10 +106,12 @@ analytics:
 author:
   name               : |
                        Wei-Lin (William) Chen
+
                        陳韋霖
   avatar             : "/assets/image/profile.jpg"
   bio                : |
                        CS PhD student at the
+                       
                        University of Virginia
   # location         : "Somewhere"
   # email            :
@@ -125,7 +127,7 @@ author:
       url: "https://twitter.com/WeiLin__Chen"
     - label: ""
       icon: "fa-regular fa-envelope"
-      url: "mailto:wlchen@nlg.csie.ntu.edu.tw"
+      url: "mailto:wlchen@virginia.edu"
 
 # Site Footer
 footer:
