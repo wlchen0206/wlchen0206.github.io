@@ -105,11 +105,11 @@ analytics:
 # Site Author
 author:
   name               : >
-                       Wei-Lin (William) Chen\n
+                       Wei-Lin (William) Chen
                        陳韋霖
   avatar             : "/assets/image/profile.jpg"
   bio                : >
-                       CS PhD student at the\n
+                       CS PhD student at the
                        University of Virginia
   # location         : "Somewhere"
   # email            :
