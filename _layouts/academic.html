@@ -35,11 +35,11 @@
                         {% if link_count > 0 %} &nbsp;/&nbsp; {% endif %}
                         {% if link.label == "" %}
                           {% if link.icon contains "google-scholar" %}
-                            <a href="{{ link.url }}">Scholar</a>
+                            <a href="{{ link.url }}">Google Scholar</a>
                           {% elsif link.icon contains "linkedin" %}
                             <a href="{{ link.url }}">LinkedIn</a>
                           {% elsif link.icon contains "x-twitter" or link.icon contains "twitter" %}
-                            <a href="{{ link.url }}">Twitter</a>
+                            <a href="{{ link.url }}">X</a>
                           {% elsif link.icon contains "envelope" %}
                             <a href="{{ link.url }}">Email</a>
                           {% elsif link.icon contains "github" %}
@@ -58,7 +58,7 @@
               </td>
               <td style="padding:2.5%;width:37%;max-width:37%">
                 {% if site.author.avatar %}
-                  <a href="{{ site.author.avatar | relative_url }}"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="{{ site.author.avatar | relative_url }}" class="hoverZoomLink"></a>
+                  <a href="{{ site.author.avatar | relative_url }}"><img style="width:70%;max-width:70%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="{{ site.author.avatar | relative_url }}" class="hoverZoomLink"></a>
                 {% endif %}
               </td>
             </tr>
