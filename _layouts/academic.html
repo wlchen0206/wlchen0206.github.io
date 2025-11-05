@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>{{ site.title }}</title>
+    <meta name="author" content="{{ site.author.name }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="{{ site.logo | default: '/assets/favicon/favicon.ico' }}" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{{ '/stylesheet.css' | relative_url }}">
+    {% if page.math %}
+    <script type="text/javascript" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    {% endif %}
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  {{ site.author.name | default: site.name }}
+                </p>
+                {% if page.about %}
+                  {{ page.about }}
+                {% endif %}
+                <p style="text-align:center">
+                  {% if site.author.links %}
+                    {% assign link_count = 0 %}
+                    {% for link in site.author.links %}
+                      {% if link.url %}
+                        {% if link_count > 0 %} &nbsp;/&nbsp; {% endif %}
+                        {% if link.label == "" %}
+                          {% if link.icon contains "google-scholar" %}
+                            <a href="{{ link.url }}">Scholar</a>
+                          {% elsif link.icon contains "linkedin" %}
+                            <a href="{{ link.url }}">LinkedIn</a>
+                          {% elsif link.icon contains "x-twitter" or link.icon contains "twitter" %}
+                            <a href="{{ link.url }}">Twitter</a>
+                          {% elsif link.icon contains "envelope" %}
+                            <a href="{{ link.url }}">Email</a>
+                          {% elsif link.icon contains "github" %}
+                            <a href="{{ link.url }}">Github</a>
+                          {% else %}
+                            <a href="{{ link.url }}">Link</a>
+                          {% endif %}
+                        {% else %}
+                          <a href="{{ link.url }}">{{ link.label }}</a>
+                        {% endif %}
+                        {% assign link_count = link_count | plus: 1 %}
+                      {% endif %}
+                    {% endfor %}
+                  {% endif %}
+                </p>
+              </td>
+              <td style="padding:2.5%;width:37%;max-width:37%">
+                {% if site.author.avatar %}
+                  <a href="{{ site.author.avatar | relative_url }}"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="{{ site.author.avatar | relative_url }}" class="hoverZoomLink"></a>
+                {% endif %}
+              </td>
+            </tr>
+          </tbody></table>
+          {{ content }}
+        </td>
+      </tr>
+    </tbody></table>
+  </body>
+</html>
+
