@@ -35,16 +35,16 @@
                         {% if link_count > 0 %} &nbsp;/&nbsp; {% endif %}
                         {% if link.label == "" %}
                           {% if link.icon contains "google-scholar" %}
-                            <a href="{{ link.url }}">Google Scholar</a>
+                            <a href="{{ link.url }}" target="_blank" rel="noopener">Google Scholar</a>
                           {% elsif link.icon contains "linkedin" %}
-                            <a href="{{ link.url }}">LinkedIn</a>
+                            <a href="{{ link.url }}" target="_blank" rel="noopener">LinkedIn</a>
                             &nbsp;/&nbsp;
-                            <a href="{{ site.author.cv | default: '/assets/document/CV_20251031.pdf' }}">CV</a>
+                            <a href="{{ site.author.cv | default: '/assets/document/CV_20251031.pdf' }}" target="_blank" rel="noopener">CV</a>
                             {% assign link_count = link_count | plus: 1 %}
                           {% elsif link.icon contains "x-twitter" or link.icon contains "twitter" %}
-                            <a href="{{ link.url }}">X (Twitter)</a>
+                            <a href="{{ link.url }}" target="_blank" rel="noopener">X (Twitter)</a>
                           {% elsif link.icon contains "envelope" %}
-                            <a href="{{ link.url }}">Email</a>
+                            <a href="{{ link.url }}" target="_blank" rel="noopener">Email</a>
                           {% elsif link.icon contains "github" %}
                             <a href="{{ link.url }}">Github</a>
                           {% else %}
