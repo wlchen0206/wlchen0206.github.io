@@ -38,6 +38,9 @@
                             <a href="{{ link.url }}">Google Scholar</a>
                           {% elsif link.icon contains "linkedin" %}
                             <a href="{{ link.url }}">LinkedIn</a>
+                            &nbsp;/&nbsp;
+                            <a href="{{ site.author.cv | default: '/assets/document/CV_20251031.pdf' }}">CV</a>
+                            {% assign link_count = link_count | plus: 1 %}
                           {% elsif link.icon contains "x-twitter" or link.icon contains "twitter" %}
                             <a href="{{ link.url }}">X (Twitter)</a>
                           {% elsif link.icon contains "envelope" %}
