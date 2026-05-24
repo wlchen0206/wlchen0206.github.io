@@ -39,7 +39,7 @@
                           {% elsif link.icon contains "linkedin" %}
                             <a href="{{ link.url }}" target="_blank" rel="noopener">LinkedIn</a>
                             &nbsp;/&nbsp;
-                            <a href="{{ site.author.cv | default: '/assets/document/CV_20251031.pdf' }}" target="_blank" rel="noopener">CV</a>
+                            <a href="{{ site.author.cv | default: '/assets/document/CV_20260523.pdf' }}" target="_blank" rel="noopener">CV</a>
                             {% assign link_count = link_count | plus: 1 %}
                           {% elsif link.icon contains "x-twitter" or link.icon contains "twitter" %}
                             <a href="{{ link.url }}" target="_blank" rel="noopener">X (Twitter)</a>
@@ -59,7 +59,7 @@
                   {% endif %}
                 </p>
                 {% if site.author.last_updated %}
-                <p style="text-align:center"><i>Last updated: {{ site.author.last_updated }}</i></p>
+                <p style="text-align:center;color:#615d5a;"><i>Last updated: {{ site.author.last_updated }}</i></p>
                 {% endif %}
                 <!-- <div style="background-color: #fff5e6; border: 2px dotted #ff8c00; padding: 10px; margin: 20px 0; display: inline-block; border-radius: 8px; text-align: center;">
                   <p style="margin: 0; font-size: 14px; color: #333;">I am actively seeking research internship positions for Summer 2026.</p>
